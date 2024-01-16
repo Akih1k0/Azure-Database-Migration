@@ -47,7 +47,7 @@ SET Rate = NULL;
 ```
 This query deletes the first 100 rows and then sets the rate to Null. This was the disaster situation and to recover the data that was deleted and altered the SQL database was recovered to the backup point from 1 hour ago. The data was the checked:
 
-![recovered data](images/employee_pay_table_recovered.png)
+![Recovered Data](images/employee_pay_table_recovered.png)
 
 ## Milestone 6: Geo-Replication and Failover
 Using geo-replication ensures a failsafe to the data if the server has an unexpected error.
@@ -65,7 +65,10 @@ ALTER ROLE db_datareader ADD MEMBER [DBReader@aicoreusers.onmicrosoft.com];
 ```
 
 Testing the user results in the following:
-![Failover Success](images/reader_success.png)
+![Reader Success](images/reader_success.png)
+
+# Azure Database UML Diagram
+![UML](images/UML.png)
 
 ## Insights and Learnings
 - The virtual machine setup and SQL Server installation were smooth.
